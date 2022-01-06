@@ -42,7 +42,7 @@ const Counter = (props) => {
 
 const ListItems = () => {
   const items = names.map((item) => (
-    <Counter name={item.name} btns={item.btns} />
+    <Counter key={item.name.toString()} name={item.name} btns={item.btns} />
   ));
   return <>{items}</>;
 };
